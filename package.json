@@ -1,25 +1,24 @@
 {
-	"name": "bhvr",
+	"name": "nhvr",
 	"version": "0.3.1",
-	"description": "A monorepo template built with Bun, Hono, Vite, and React",
-	"author": "Steve Simkins",
+	"packageManager": "pnpm@9.0.0",
+	"description": "A monorepo template built with Nodejs, Hono, Vite, and React",
+	"author": "Sanath Kumar U",
 	"license": "MIT",
-	"homepage": "https://github.com/stevedylandev/bhvr",
-	"workspaces": ["./server", "./client", "./shared"],
+	"homepage": "https://github.com/sanathusk/nhvr",
 	"scripts": {
-		"dev:client": "cd client && bun run dev",
-		"dev:server": "cd server && bun run dev",
-		"dev:shared": "cd shared && bun run dev",
-		"dev": "concurrently \"bun run dev:shared\" \"bun run dev:server\" \"bun run dev:client\"",
-		"build:client": "cd client && bun run build",
-		"build:shared": "cd shared && bun run build",
-		"build:server": "cd server && bun run build",
-		"build": "bun run build:shared && bun run build:server && bun run build:client",
-		"postinstall": "bun run build:shared && bun run build:server"
+		"dev:client": "cd client && pnpm run dev",
+		"dev:server": "cd server && pnpm run dev",
+		"dev:shared": "cd shared && pnpm run dev",
+		"dev": "concurrently \"pnpm run dev:shared\" \"pnpm run dev:server\" \"pnpm run dev:client\"",
+		"build:client": "cd client && pnpm run build",
+		"build:shared": "cd shared && pnpm run build",
+		"build:server": "cd server && pnpm run build",
+		"build": "pnpm run build:shared && pnpm run build:server && pnpm run build:client",
+		"postinstall": "pnpm run build:shared && pnpm run build:server"
 	},
-	"keywords": ["bun", "hono", "react", "vite", "monorepo"],
+	"keywords": ["hono", "react", "vite", "monorepo"],
 	"devDependencies": {
-		"bun-types": "latest",
 		"concurrently": "^9.1.2"
 	},
 	"peerDependencies": {

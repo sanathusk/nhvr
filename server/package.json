@@ -1,17 +1,19 @@
 {
   "name": "server",
   "version": "0.0.1",
+  "packageManager": "pnpm@9.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "bun --watch run src/index.ts"
+    "dev": "node --watch --loader ts-node/esm src/index.ts"
   },
   "dependencies": {
     "hono": "^4.7.11",
     "shared": "workspace:*"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "^20.15.0",
+    "ts-node": "^10.9.2"
   }
 }

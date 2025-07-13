@@ -240,7 +240,7 @@ import { ApiResponse } from 'shared/types';
 
 ## Learn More
 
-- [Bun Documentation](https://bun.sh/docs)
+- [Nodejs Documentation](https://nodejs.org/docs/latest/api)
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://react.dev/learn)
 - [Hono Documentation](https://hono.dev/docs)

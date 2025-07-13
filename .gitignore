@@ -1,8 +1,9 @@
-# bhvr/.gitignore
+# nhvr/.gitignore
 # dependencies
 node_modules
 .pnp
 .pnp.js
+.pnpm/
 
 # testing
 coverage
@@ -36,6 +37,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-
-# Bun
-bun.lockb
